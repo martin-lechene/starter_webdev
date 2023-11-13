@@ -13,14 +13,14 @@ cd "$folder_name"
 npm init -y
 
 # Installer les dépendances
-npm install node-sass nodemon babel-cli babel-preset-env webpack webpack-cli --save-dev
+npm install node-sass nodemon babel-cli babel-preset-env webpack webpack-cli
 
 
 echo '{
   "name": "'$folder_name'",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/js/app.js",
   "scripts": {
     "css": "node-sass --watch src/scss/main.scss src/css/main.css",
     "js-babel": "babel src/js/app.js -o src/js/app.min.js --watch --source-maps",
@@ -82,8 +82,6 @@ echo '<!DOCTYPE html>
   <script src="src/js/app.js"></script>
 </body>
 </html>' > index.html
-
-bash npm install
 
 echo "Installation terminée dans le dossier $folder_name. N'oubliez pas d'exécuter 'npm install' pour installer les dépendances si cela n'a pas été fait."
 

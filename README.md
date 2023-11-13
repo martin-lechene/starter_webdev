@@ -1,8 +1,14 @@
 # Started Web Dev
 
-## Commands
+# Requirements
+- Git
+- NodeJS / NPM
+- Packages minimal : node-sass, nodemon
+- 
 
+## Commands
 ### NPM 
+
 #### SaSS > CSS
 ```
 npm run css

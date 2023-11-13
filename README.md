@@ -3,7 +3,7 @@
 # Requirements
 - Git
 - NodeJS / NPM
-- Packages minimal : node-sass, nodemon
+- Packages minimal before work with : node-sass, nodemon, uglifycss
 - 
 
 ## Commands
@@ -17,6 +17,11 @@ npm run css
 ```
 npm run watch
 ```
+### Uglify-CSS
+```
+npm run uglify-css
+```
 
 
 ### Special commands
+Found all special cmds in src/cmds/ and choice your perfence platform : bash or sh and after your project type

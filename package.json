@@ -1,0 +1,17 @@
+{
+  "name": "STARTER_KIT",
+  "version": "1.0.0",
+  "description": "A starter kit for web development projects",
+  "main": "src/js/app.js",
+  "scripts": {
+    "css": "node-sass --include-path scss src/scss/main.scss src/css/main.css", // Create CSS from SCSS
+    "watch": "nodemon -e scss -x \"npm run css\"" // Watch SCSS files for changes, then run the CSS script
+  },
+  "keywords": ["STARTER_KIT"],
+  "author": "Martin Lechêne",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "name": "egonix",
+  "name": "Starter Kit",
   "version": "1.0.0",
-  "description": "- Git\r - NodeJS / NPM\r - Packages minimal : node-sass, nodemon\r -",
+  "description": "Starter Kit for Web Development",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -193,9 +193,19 @@
   "scripts": {
     "css": "node-sass --include-path scss src/scss/main.scss src/css/main.css",
     "uglifycss": "uglifycss src/css/main.css > src/css/main.min.css",
-    "watch": "nodemon -e scss -x \"npm run css && npm run uglifycss\""
+    "watch": "nodemon -e scss -x \"npm run css && npm run uglifycss\"",
+    "start": "npm run watch",
+    "build": "npm run css && npm run uglifycss",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e scss -x \"npm run css && npm run uglifycss\"",
+    "prod": "npm run css && npm run uglifycss",
+    "sass": "node-sass --include-path scss src/scss/main.scss src/css/main.css",
+    "sass:watch": "nodemon -e scss -x \"npm run sass\"",
+    "sass:build": "npm run sass && npm run uglifycss",
+    "sass:dev": "nodemon -e scss -x \"npm run sass\"",
+    "sass:prod": "npm run sass && npm run uglifycss"
   },
   "keywords": [],
-  "author": "",
+  "author": "Martin Lechêne (https://github.com/martin-lechene/)",
   "license": "ISC"
 }

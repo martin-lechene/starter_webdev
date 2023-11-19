@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script d'installation d'un nouveau projet PHP pur
+# Script d'installation d'un nouveau projet PHP pur avec SearchPHP/PHPSearch
 
 # Définir le nom du projet
 read -p "Nom du projet: " project_name
@@ -24,6 +24,9 @@ echo '{
         "psr-4": {
             "App\\": "src/"
         }
+    },
+    "require": {
+        "searchphp/phpsearch": "*"
     }
 }' > composer.json
 
@@ -37,4 +40,4 @@ echo "# $project_name" > README.md
 npm init -y
 
 # Afficher un message de fin
-echo "Le projet $project_name a été initialisé avec succès!"
+echo "Le projet $project_name a été initialisé avec succès, et SearchPHP/PHPSearch a été ajouté avec Composer!"

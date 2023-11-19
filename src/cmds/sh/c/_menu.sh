@@ -6,8 +6,8 @@
 
         case $c_command_choice in
             1)
-                # Installer C / C++ / C#
-                bash src/cmds/c/install-c.sh
+                # Installer Générals
+                bash src/cmds/c/install.sh
                 ;;
             2)
                 # Autre commande C / C++ / C#

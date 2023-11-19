@@ -14,7 +14,8 @@ echo "9. Python"
 echo "10. Java"
 echo "11. C / C++ / C#"
 echo "12. Crédits"
-echo "13. Quitter"
+echo "13. Install pré-requis"
+echo "14. Quitter"
 
 # Lire l'entrée de l'utilisateur pour choisir la technologie
 read -p "Choisissez une technologie (1-13) : " tech_choice
@@ -58,6 +59,9 @@ case $tech_choice in
         bash src/cmds/sh/credits.sh
         ;;
     13)
+        bash src/cmds/sh/install-requirement.sh
+        ;;
+    14)
         # Quitter
         echo "Au revoir !"
         exit

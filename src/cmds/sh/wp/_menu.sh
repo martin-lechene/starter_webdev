@@ -1,8 +1,8 @@
 # WordPress
-        echo "Choisissez une commande :"
-        echo "1. WordPress Complet"
-        echo "2. WordPress Core"
-        echo "3. WordPress + React Startkit (postlight)"
+        echo "Choisissez le type d'installation WordPress :"
+        echo "1. WP Complet"
+        echo "2. WP Core"
+        echo "3. WP + React Startkit (postlight)"
         read -p "Choisissez une commande (1-2) : " wp_command_choice
 
         case $wp_command_choice in

@@ -3,11 +3,15 @@
         echo "1. WP Complet"
         echo "2. WP Core"
         echo "3. WP + React Startkit (postlight)"
-        read -p "Choisissez une commande (1-2) : " wp_command_choice
+        read -p "Choisissez une commande (1-x) : " wp_command_choice
 
         case $wp_command_choice in
             1)
                 # Installation de WordPress Complet
+                echo "Installation de WordPress Complet selectionné."
+                wait 2
+                echo "Chargement de l'installation de WordPress Complet..."
+                wait 2
                 bash src/cmds/wp/install-full.sh
                 ;;
             2)

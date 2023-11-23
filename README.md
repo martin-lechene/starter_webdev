@@ -2,6 +2,32 @@
 ## Description
 This project is a starter for web development. It's a simple project with a lot of technology, template, framework, etc... You can choose your technology and start your project with a good base.
 
+## Table of contents
+- [auto-starter-kit](#auto-starter-kit)
+  - [Description](#description)
+  - [Table of contents](#table-of-contents)
+  - [Requirements](#requirements)
+  - [Start creator project](#start-creator-project)
+    - [Step 1](#step-1)
+    - [Step 2](#step-2)
+    - [Step 3](#step-3)
+    - [Step 4](#step-4)
+  - [Specifics commands](#specifics-commands)
+  - [Contributors](#contributors)
+  - [License](#license)
+  - [Author](#author)
+  - [Features](#features)
+      - [Auto installers](#auto-installers)
+      - [Actions on project](#actions-on-project)
+      - [Languages](#languages)
+      - [Frameworks](#frameworks)
+      - [Templates](#templates)
+      - [Software](#software)
+      - [IDE](#ide)
+      - [OS](#os)
+      - [Others](#others)
+
+
 ## Requirements
 - Git
 - NodeJS / NPM
@@ -24,6 +50,8 @@ This project is a starter for web development. It's a simple project with a lot 
 - ``npm run watch`` # Listening all change in SaSS for update (s)CSS
 
 ## Contributors
+- [Martin Lechêne](https://github.com/martin-lechene) 
+- You ? Don't hesitate to contribute and send your best pull request or repair all issues !
 
 ## License
 MIT License

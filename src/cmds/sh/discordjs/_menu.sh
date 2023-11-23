@@ -1,8 +1,10 @@
  # Discord Bot
         echo "Choisissez une commande :"
-        echo "1. Installer Discord Bot"
-        echo "2. Autre commande Discord Bot"
-        read -p "Choisissez une commande (1-2) : " discord_command_choice
+        echo "1. Installer Discord Bot Basic"
+        echo "2. Command Creator"
+        echo "3. Auto send message basic"
+        echo "4. Auto send message with embed"
+        read -p "Choisissez une commande : " discord_command_choice
 
         case $discord_command_choice in
             1)

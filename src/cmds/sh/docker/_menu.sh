@@ -1,7 +1,6 @@
  # Docker
         echo "Choisissez une commande :"
-        echo "1. Installer Docker"
-        echo "2. Autre commande Docker"
+        echo "1. Installer Docker Hello World"
         read -p "Choisissez une commande (1-2) : " docker_command_choice
 
         case $docker_command_choice in

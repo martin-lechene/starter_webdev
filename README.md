@@ -36,10 +36,10 @@ MIT License
 - [ ] Auto install dependencies
 - - [ ] NodeJS
 - - [ ] NPM
-- - - [ ] node-sass
-- - - [ ] nodemon
-- - - [ ] uglifycss
-- - - [ ] uglifyjs
+- - - [x] node-sass
+- - - [x] nodemon
+- - - [x] uglifycss
+- - - [x] uglifyjs
 - - - [ ] browser-sync
 - - - [ ] gulp
 - - - [ ] grunt
@@ -53,10 +53,10 @@ MIT License
 - - [ ] PHP (7.4 to +8.3)
 - - [ ] Python (3.9 to +4.0)
 - - [ ] Java (8 to +17)
-- [x] NodeJS
-- [x] NPM
-- [x] Git
-- [x] Composer
+- [ ] NodeJS
+- [ ] NPM
+- [ ] Git
+- [ ] Composer
 - [ ] HTML5
 - - [ ] Bootstrap
 - - [ ] Foundation
@@ -90,12 +90,12 @@ MIT License
 - - [ ] PHPSearch
 - [ ] CodeIgniter
 - [ ] CakePHP
-- [x] Laravel
-- [x] Symfony
-- [x] NodeJS
-- [x] AngularJS
-- [x] ReactJS
-- [x] VueJS
+- [ ] Laravel
+- [ ] Symfony
+- [ ] NodeJS
+- [ ] AngularJS
+- [ ] ReactJS
+- [ ] VueJS
 - [ ] Windows
 - - [] Chocolatey
 - - [] WSL
@@ -111,8 +111,10 @@ MIT License
 - - [ ] PHP
 - - [ ] Python
 - - [ ] Java
+- - - [ ] MobaXterm
+- - - [ ] PuTTY
 - - [ ] IDE
-- - - [ ] Visual Studio Code
+- [ ] Visual Studio Code
 - - - [ ] Visual Studio
 - - - [ ] Sublime Text
 - - - [ ] Atom
@@ -124,6 +126,10 @@ MIT License
 - - - [ ] Android Studio
 - - - [ ] PyCharm
 - - - [ ] WebStorm
+- - - [ ] PhpStorm
+- - - [ ] RubyMine
+- - - [ ] GoLand
+
 - [ ] Linux
 - [ ] MacOS
 

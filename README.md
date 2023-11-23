@@ -61,28 +61,29 @@ MIT License
 
 ## Features
 #### Auto installers
-- [ ] Auto install dependencies #14
-- - [ ] NodeJS
-- - [ ] NPM
-- - - [x] node-sass
-- - - [x] nodemon
-- - - [x] uglifycss
-- - - [x] uglifyjs
-- - - [ ] browser-sync
-- - - [ ] gulp
-- - - [ ] grunt
-- - - [ ] webpack
-- - - [ ] parcel
-- - - [ ] rollup
-- - - [ ] bower
-- - [ ] NVM
-- - [ ] Git
-- - [ ] Composer
-- - [ ] PHP (7.4 to +8.3)
-- - [ ] Python (3.9 to +4.0)
-- - [ ] Java (8 to +17)
-- - [ ] Git
-- - [ ] Composer
+#### Auto install dependencies #14
+- [ ] NodeJS
+- [ ] NPM
+- - [x] node-sass
+- - [x] nodemon
+- - [x] uglifycss
+- - [x] uglifyjs
+- - [ ] browser-sync
+- - [ ] gulp
+- - [ ] grunt
+- - [ ] webpack
+- - [ ] parcel
+- - [ ] rollup
+- - [ ] bower
+- [ ] NVM
+- [ ] Git
+- [ ] Composer
+- [ ] PHP (7.4 to +8.3)
+- [ ] Python (3.9 to +4.0)
+- [ ] Java (8 to +17)
+- [ ] Git
+- [ ] Composer
+#### Installers project
 - [ ] HTML5 #7
 - - [ ] Bootstrap
 - - [ ] Foundation
@@ -99,21 +100,21 @@ MIT License
 - - [ ] C# #4
 - [x] Java 
 - [x] Python #11
-- - [ ] Basic
-- - [ ] Crawler
-- - [ ] Django
-- - [ ] FastAPI
-- - [ ] Flask
-- - [ ] Kivy
-- - [ ] Pygame
-- - [ ] PyQT
-- - [ ] Django
+- [ ] Basic
+- [ ] Crawler
+- [ ] Django
+- [ ] FastAPI
+- [ ] Flask
+- [ ] Kivy
+- [ ] Pygame
+- [ ] PyQT
+- [ ] Django
 - [x] PHP #9
-- - [ ] Base
-- - [ ] Basic
-- - [ ] Brionmario
-- - [ ] Mastodon
-- - [ ] PHPSearch
+- [ ] Base
+- [ ] Basic
+- [ ] Brionmario
+- [ ] Mastodon
+- [ ] PHPSearch
 - [ ] CodeIgniter
 - [ ] CakePHP
 - [ ] Zend
@@ -137,7 +138,7 @@ MIT License
 - [ ] .NET
 - [ ] ASP.NET
 - [ ] Wordpress #13
-- [ ] Windows
+#### Windows
 - - [ ] Chocolatey
 - - [ ] WSL
 - - - [ ] Ubuntu
@@ -154,7 +155,7 @@ MIT License
 - - [ ] Java
 - - - [ ] MobaXterm
 - - - [ ] PuTTY
-- - [ ] IDE
+#### IDE
 - [ ] Visual Studio Code
 - - - [ ] Visual Studio
 - - - [ ] Sublime Text
@@ -170,9 +171,10 @@ MIT License
 - - - [ ] PhpStorm
 - - - [ ] RubyMine
 - - - [ ] GoLand
+#### Linux 
+#### MacOS
 
-- [ ] Linux
-- [ ] MacOS
+___
 
 #### Actions on project
 - [ ] Ugilify JS & CSS

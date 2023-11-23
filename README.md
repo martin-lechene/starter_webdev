@@ -61,7 +61,7 @@ MIT License
 
 ## Features
 #### Auto installers
-- [ ] Auto install dependencies
+- [ ] Auto install dependencies #14
 - - [ ] NodeJS
 - - [ ] NPM
 - - - [x] node-sass
@@ -81,11 +81,9 @@ MIT License
 - - [ ] PHP (7.4 to +8.3)
 - - [ ] Python (3.9 to +4.0)
 - - [ ] Java (8 to +17)
-- [ ] NodeJS
-- [ ] NPM
-- [ ] Git
-- [ ] Composer
-- [ ] HTML5
+- - [ ] Git
+- - [ ] Composer
+- [ ] HTML5 #7
 - - [ ] Bootstrap
 - - [ ] Foundation
 - - [ ] Materialize
@@ -94,13 +92,13 @@ MIT License
 - - [ ] Skeleton
 - - [ ] Pure
 - - [ ] UI Kit
-- [ ] Software
-- - [ ] C
-- - [ ] C+
-- - [ ] C++
-- - [ ] C#
-- [x] Java
-- [x] Python
+- [ ] Software 
+- - [ ] C #1
+- - [ ] C+ #2
+- - [ ] C++ #3
+- - [ ] C# #4
+- [x] Java 
+- [x] Python #11
 - - [ ] Basic
 - - [ ] Crawler
 - - [ ] Django
@@ -110,7 +108,7 @@ MIT License
 - - [ ] Pygame
 - - [ ] PyQT
 - - [ ] Django
-- [x] PHP
+- [x] PHP #9
 - - [ ] Base
 - - [ ] Basic
 - - [ ] Brionmario
@@ -118,20 +116,35 @@ MIT License
 - - [ ] PHPSearch
 - [ ] CodeIgniter
 - [ ] CakePHP
-- [ ] Laravel
-- [ ] Symfony
-- [ ] NodeJS
+- [ ] Zend
+- [ ] Yii
+- [ ] Docker #6
+- [ ] Drupal
+- [ ] Laravel #8
+- [ ] Symfony #12
 - [ ] AngularJS
 - [ ] ReactJS
 - [ ] VueJS
+- [ ] Ruby
+- [ ] Ruby on Rails
+- [ ] Go
+- [ ] Rust
+- [ ] Swift
+- [ ] Kotlin
+- [ ] Scala
+- [ ] Dart
+- [ ] Flutter
+- [ ] .NET
+- [ ] ASP.NET
+- [ ] Wordpress #13
 - [ ] Windows
-- - [] Chocolatey
-- - [] WSL
-- - - [] Ubuntu
-- - - [] Debian
-- - - [] Fedora
-- - - [] OpenSUSE
-- - - [] Kali Linux
+- - [ ] Chocolatey
+- - [ ] WSL
+- - - [ ] Ubuntu
+- - - [ ] Debian
+- - - [ ] Fedora
+- - - [ ] OpenSUSE
+- - - [ ] Kali Linux
 - - [ ] NodeJS
 - - [ ] NPM
 - - [ ] Git

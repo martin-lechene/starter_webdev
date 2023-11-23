@@ -100,25 +100,25 @@ MIT License
 - - [ ] C# #4
 - [x] Java 
 - [x] Python #11
-- [ ] Basic
-- [ ] Crawler
-- [ ] Django
-- [ ] FastAPI
-- [ ] Flask
-- [ ] Kivy
-- [ ] Pygame
-- [ ] PyQT
-- [ ] Django
+- - [ ] Basic
+- - [ ] Crawler
+- - [ ] Django
+- - [ ] FastAPI
+- - [ ] Flask
+- - [ ] Kivy
+- - [ ] Pygame
+- - [ ] PyQT
+- - [ ] Django
 - [x] PHP #9
-- [ ] Base
-- [ ] Basic
-- [ ] Brionmario
-- [ ] Mastodon
-- [ ] PHPSearch
-- [ ] CodeIgniter
-- [ ] CakePHP
-- [ ] Zend
-- [ ] Yii
+- - [ ] Base
+- - [ ] Basic
+- - [ ] Brionmario
+- - [ ] Mastodon
+- - [ ] PHPSearch
+- - [ ] CodeIgniter
+- - [ ] CakePHP
+- - [ ] Zend
+- - [ ] Yii
 - [ ] Docker #6
 - [ ] Drupal
 - [ ] Laravel #8

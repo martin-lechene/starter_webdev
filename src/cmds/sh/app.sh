@@ -15,10 +15,11 @@ echo "10. Java"
 echo "11. C / C++ / C#"
 echo "12. Crédits"
 echo "13. Install pré-requis"
-echo "14. Quitter"
+echo "14. Creater un new command"
+echo "15. Quitter"
 
 # Lire l'entrée de l'utilisateur pour choisir la technologie
-read -p "Choisissez une technologie (1-13) : " tech_choice
+read -p "Choisissez une technologie : " tech_choice
 
 # Sélectionner la commande spécifique en fonction de la technologie choisie
 case $tech_choice in
@@ -62,11 +63,15 @@ case $tech_choice in
         bash src/cmds/sh/install-requirement.sh
         ;;
     14)
+        # Creater un new command
+        bash src/cmds/sh/cmd_creator.sh
+        exit
+        ;;
+    15)
         # Quitter
         echo "Au revoir !"
         exit
         ;;
-       # Ajoutez des cas pour d'autres technologies
     *)
         echo "Option invalide. Choisissez une option de 1 à 13."
         ;;

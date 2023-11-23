@@ -59,8 +59,8 @@ MIT License
 ## Author
 - [Martin Lechêne](https://github.com/martin-lechene)
 
-## Features
-#### Auto installers
+## To Do List
+### Auto installers
 #### Auto install dependencies #14
 - [ ] NodeJS
 - [ ] NPM
@@ -75,7 +75,23 @@ MIT License
 - - [ ] parcel
 - - [ ] rollup
 - - [ ] bower
-- [ ] NVM
+- - [ ] yarn
+- - [ ] nvm
+- - [ ] discordJS
+- - [ ] express
+- - [ ] react
+- - [ ] vue
+- - [ ] angular
+- - [ ] jquery
+- - [ ] bootstrap
+- - [ ] foundation
+- - [ ] materialize
+- - [ ] semantic-ui
+- - [ ] tailwind
+- - [ ] bulma
+- - [ ] skeleton
+- - [ ] pure
+- [ ] Yarn
 - [ ] Git
 - [ ] Composer
 - [ ] PHP (7.4 to +8.3)
@@ -83,7 +99,7 @@ MIT License
 - [ ] Java (8 to +17)
 - [ ] Git
 - [ ] Composer
-#### Installers project
+#### Installers project 
 - [ ] HTML5 #7
 - - [ ] Bootstrap
 - - [ ] Foundation
@@ -138,23 +154,7 @@ MIT License
 - [ ] .NET
 - [ ] ASP.NET
 - [ ] Wordpress #13
-#### Windows
-- - [ ] Chocolatey
-- - [ ] WSL
-- - - [ ] Ubuntu
-- - - [ ] Debian
-- - - [ ] Fedora
-- - - [ ] OpenSUSE
-- - - [ ] Kali Linux
-- - [ ] NodeJS
-- - [ ] NPM
-- - [ ] Git
-- - [ ] Composer
-- - [ ] PHP
-- - [ ] Python
-- - [ ] Java
-- - - [ ] MobaXterm
-- - - [ ] PuTTY
+
 #### IDE
 - [ ] Visual Studio Code
 - - - [ ] Visual Studio
@@ -171,12 +171,11 @@ MIT License
 - - - [ ] PhpStorm
 - - - [ ] RubyMine
 - - - [ ] GoLand
-#### Linux 
-#### MacOS
+#### Others
+- [ ] Delete all files of project listed in /projects
+- [ ] Template for create a new command
 
-___
-
-#### Actions on project
+### Actions on project
 - [ ] Ugilify JS & CSS
 - [ ] Minify JS & CSS
 - [ ] Compile SaSS

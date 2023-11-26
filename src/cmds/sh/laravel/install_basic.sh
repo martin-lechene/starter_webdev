@@ -28,40 +28,17 @@ if [[ -z $project_destination ]]; then
     project_destination="projects"
 fi
 
-# Aller dans le dossier de destination du projet & créer le projet Laravel
-echo "Création du projet Laravel $project_name dans $project_destination"
-composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name"
-cd "$project_destination/$project_name"
-if [[ $version == "5" ]]; then
-    composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name" "5.*"
-    php_version=$(php -v | head -n 1 | cut -d " " -f 2 | cut -c 1-3)
-    if [[ $php_version != "7.3" ]]; then
-        # change version for php 7.3 in php.ini
-        sudo sed -i "s/7.4/7.3/g" /etc/apache2/sites-available/"$project_name".conf
-    fi
-elif [[ $version == "6" ]]; then
-    composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name" "6.*"
-elif [[ $version == "7" ]]; then
-    composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name" "7.*"
-elif [[ $version == "8" ]]; then
-    composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name" "8.*"
-elif [[ $version == "9" ]]; then
-    composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name" "9.*"
-elif [[ $version == "10" ]]; then
-    composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name" "10.*"
-else
-    composer create-project --prefer-dist laravel/laravel "$project_destination"/"$project_name"
-fi
+# Créer le dossier du projet par version de Laravel
+bash src/cmds/sh/laravel/create_project.sh
 
 # Créer le projet Laravel (condition si cmd : avec --auth, avec jetsream, orchid, et 20 autres propositions, etc.)
-#composer create-project --prefer-dist laravel/laravel "$project_name"
 read -p "Voulez-vous ajouter le système d'authentification Laravel ? (y/n): " add_lara_auth
 if [[ $add_lara_auth == "y" ]]; then
   composer require laravel/ui
   php artisan ui bootstrap --auth
 fi
 
-# Cpier le fichier .env.example en .env
+# Copier le fichier .env.example en .env
 cp ".env.example" ".env"
 echo "Fichier .env.example copié en .env. Modifier les informations de connexion à la base de données pour continuer."
 echo "N'oublier pas le APP_NAME,... Appuyez sur une touche pour continuer."
@@ -72,11 +49,8 @@ nano .env
 read -p "Entrez l'URL du projet (ex: monprojet.local): " project_url
 sed -i "s/APP_URL=http:\/\/localhost/APP_URL=http:\/\/$project_url/g" "$project_destination/$project_name/.env"
 
-# php artisan key:generate (demande d'acceptation avant)
-read -p "Voulez-vous générer une clé token d'application ? (y/n): " key_generate
-if [[ $key_generate == "y" ]]; then
-    php artisan key:generate
-fi
+# Générer la clé token d'application
+bash src/cmds/sh/laravel/key_generate.sh
 
 # Liste des packages Laravel
 packages=("spatie/laravel-permission" "barryvdh/laravel-debugbar", "laravel/jetstream", "laravel/telescope", "laraflash/flash", "orchid/platform")
@@ -164,30 +138,11 @@ npm run build
 #    php artisan db:seed
 #fiye
 
-# php artisan storage:link (demande d'acceptation avant)
-read -p "Voulez-vous créer le lien symbolique vers le dossier storage ? (y/n): " storage_link
-if [[ $storage_link == "y" ]]; then
-    php artisan storage:link
-fi
 
-# Création de virtual hosts
-read -p "Voulez-vous créer un virtual host (http/https avec certbot) ? (y/n): " create_vhost
-if [[ $create_vhost == "y" ]]; then
-    read -p "Entrez le nom du domaine (ex: monprojet.local): " domain_name
-    sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/$domain_name.conf
-    sudo sed -i "s/ServerName localhost/ServerName $domain_name/g" /etc/apache2/sites-available/$domain_name.conf
-    sudo a2ensite $domain_name.conf
-    sudo systemctl restart apache2
+# Créer le lien symbolique vers le dossier storage
+bash src/cmds/sh/laravel/link_storage.sh
+# Créer le virtual host
+bash src/cmds/sh/actions/create_virtual_hosts.sh
+# Lancer le serveur
+bash src/cmds/sh/laravel/start.sh
 
-    # Certbot pour HTTPS
-    read -p "Voulez-vous configurer HTTPS avec certbot ? (y/n): " add_certbot
-    if [[ $add_certbot == "y" ]]; then
-        sudo certbot --apache -d $domain_name
-    fi
-fi
-
-# php artisan serve (demande d'acceptation avant)
-read -p "Voulez-vous lancer le serveur de développement de se projet ? (y/n): " serve
-if [[ $serve == "y" ]]; then
-    php artisan serve
-fi

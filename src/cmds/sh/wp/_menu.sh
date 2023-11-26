@@ -16,13 +16,21 @@
                 ;;
             2)
                 # Installation du core de WordPress
+                echo "Installation du core de WordPress selectionné."
+                wait 2
+                echo "Chargement de l'installation du core de WordPress..."
+                wait 2
                 bash src/cmds/wp/install-core.sh
                 ;;
             3)
                 # Installation de WordPress + React Startkit (postlight)
+                echo "Installation de WordPress + React Startkit (postlight) selectionné."
+                wait 2
+                echo "Chargement de l'installation de WordPress + React Startkit (postlight)..."
+                wait 2
                 bash src/cmds/wp/install-react.sh
                 ;;
             *)
-                echo "Option invalide. Choisissez une option de 1 à 2."
+                echo "Option invalide. Choisissez une option."
                 ;;
         esac

@@ -45,9 +45,7 @@ echo "N'oublier pas le APP_NAME,... Appuyez sur une touche pour continuer."
 read -n 1 -s
 nano .env
 
-# Ajouter le nom du projet dans le fichier .env (APP_URL)
-read -p "Entrez l'URL du projet (ex: monprojet.local): " project_url
-sed -i "s/APP_URL=http:\/\/localhost/APP_URL=http:\/\/$project_url/g" "$project_destination/$project_name/.env"
+n
 
 # Générer la clé token d'application
 bash src/cmds/sh/laravel/key_generate.sh

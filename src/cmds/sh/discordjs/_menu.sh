@@ -9,12 +9,9 @@
 
         case $discord_command_choice in
             1)
-                # Installer Discord Bot
-                bash src/cmds/discord/install-discord-bot.sh
-                ;;
-            2)
-                # Autre commande Discord Bot
-                bash src/cmds/discord/autre-commande.sh
+                # Bot Basic
+                echo "Installation du bot Discord Basic"
+                bash src/cmds/sh/discordjs/bot_basic.sh
                 ;;
             *)
                 echo "Option invalide. Choisissez une option de 1 à 2."

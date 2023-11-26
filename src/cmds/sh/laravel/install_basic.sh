@@ -45,7 +45,6 @@ echo "N'oublier pas le APP_NAME,... Appuyez sur une touche pour continuer."
 read -n 1 -s
 nano .env
 
-n
 
 # Générer la clé token d'application
 bash src/cmds/sh/laravel/key_generate.sh

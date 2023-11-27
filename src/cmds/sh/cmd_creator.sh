@@ -19,7 +19,6 @@ if [[ $project_type == "sh" ]]; then
     # Se placer dans le dossier du projet
     cd "$project_name"
     touch "_menu.sh"
-    touch "_return.sh"
     touch "install_basic.sh"
     cd ../..
 elif [[ $project_type == "bat" ]]; then
@@ -30,50 +29,23 @@ elif [[ $project_type == "bat" ]]; then
     # Se placer dans le dossier du projet
     cd "$project_name"
     touch "_menu.bat"
-    touch "_return.bat"
     touch "install_basic.bat"
     cd ../..
 elif [[ $project_type == "customs" ]]; then
     # Créer les fichiers _menu.sh, _return.sh et install_basic.sh
+    read -p "Entrez le nom du dossier customs (sh, bat, ..) : " customs_name
     cd "customs"
     # Créer le dossier du projet
     mkdir "$project_name"
     # Se placer dans le dossier du projet
     cd "$project_name"
-    touch "_menu.sh"
-    touch "_return.sh"
-    touch "install_basic.sh"
+    touch "_menu.$customs_name"
+    touch "install_basic.$customs_name"
     cd ../..
 else
     echo "Le type de projet n'est pas valide."
     exit
 fi
-
-
-
-# Éditer le contenu du fichier _menu.sh
-cat <<EOL >_menu.sh
-#!/bin/bash
-
-# [$project_name]
-echo "Choisissez une commande :"
-echo "1. Basic / Hello World"
-read -p "Choisissez une commande () : ${project_name}_command_choice"
-
-case \$${project_name}_command_choice in
-    1)
-        # Installer $project_name basic
-        bash src/cmds/$project_name/install_basic.sh
-        ;;
-    2)
-        # Return
-        bash src/cmds/$project_name/_return.sh
-        ;;
-    *)
-        echo "Option invalide. Choisissez une option."
-        ;;
-esac
-EOL
 
 echo "Le script a été créé avec succès dans le dossier $project_name."
 echo "Vous pouvez maintenant l'éditer pour ajouter des commandes."

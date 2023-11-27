@@ -1,19 +1,19 @@
   # NodeJS
         echo "Choisissez une commande :"
         echo "1. Installer NodeJS"
-        echo "2. Autre commande NodeJS"
-        read -p "Choisissez une commande (1-2) : " nodejs_command_choice
+        echo "2. Installer dogs-api"
+        read -p "Choisissez une commande : " nodejs_command_choice
 
         case $nodejs_command_choice in
             1)
                 # Installer NodeJS
-                bash src/cmds/nodejs/install-nodejs.sh
+                bash src/cmds/sh/nodejs/install_nodejs.sh
                 ;;
             2)
-                # Autre commande NodeJS
-                bash src/cmds/nodejs/autre-commande.sh
+                # dogs-api
+                bash src/cmds/sh/nodejs/dogs_api.sh
                 ;;
             *)
-                echo "Option invalide. Choisissez une option de 1 à 2."
+                echo "Option invalide."
                 ;;
         esac

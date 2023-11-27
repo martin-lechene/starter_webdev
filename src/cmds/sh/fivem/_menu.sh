@@ -7,7 +7,6 @@
             1)
                 # Installation de FiveM
                 echo "Installation de FiveM selectionné."
-                wait 2
                 echo "Chargement de l'installation de FiveM..."
                 wait 2
                 bash src/cmds/sh/fivem/install_fivem.sh

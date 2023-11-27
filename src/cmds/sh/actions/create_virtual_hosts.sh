@@ -1,6 +1,5 @@
 
 # Création de virtual hosts
-
 read -p "Entrez le nom du domaine (ex: monprojet.local): " domain_name
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/$domain_name.conf
 sudo sed -i "s/ServerName localhost/ServerName $domain_name/g" /etc/apache2/sites-available/$domain_name.conf

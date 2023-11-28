@@ -7,7 +7,7 @@
         echo "4. Installer projet FastAPI"
         echo "5. Installer projet Pygame"
         echo "6. Installer projet crawler"
-        read -p "Choisissez une commande (1-6) : " python_command_choice
+        read -p "Choisissez une commande : " python_command_choice
 
         case $python_command_choice in
             0)

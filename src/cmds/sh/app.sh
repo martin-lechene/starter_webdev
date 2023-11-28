@@ -6,17 +6,15 @@ echo "1. WordPress"
 echo "2. PHP Native / WebApp"
 echo "3. Laravel"
 echo "4. Discord Bot"
-#echo "5. Symfony"
-#echo "6. Docker"
-#echo "7. HTML"
+echo "5. Symfony"
+echo "6. Docker"
+echo "7. HTML"
 echo "8. NodeJS"
-#echo "9. Python"
-#echo "10. Java"
-#echo "11. C / C++ / C#"
-echo "12. Crédits"
-echo "13. Install pré-requis"
-echo "14. Creator un new command"
-echo "15. Quitter"
+echo "9. Python"
+echo "10. Crédits"
+echo "11. Install pré-requis"
+echo "12. Creator un new command"
+echo "13. Quitter"
 
 # Lire l'entrée de l'utilisateur pour choisir la technologie
 read -p "Choisissez une technologie : " tech_choice
@@ -50,24 +48,19 @@ case $tech_choice in
     9)
         bash src/cmds/sh/python/_menu.sh
         ;;
+
     10)
-        bash src/cmds/sh/java/_menu.sh
-        ;;
-    11)
-        bash src/cmds/sh/c/_menu.sh
-        ;;
-    12)
         bash src/cmds/sh/credits.sh
         ;;
-    13)
+    11)
         bash src/cmds/sh/install-requirement.sh
         ;;
-    14)
+    12)
         # Creater un new command
         bash src/cmds/sh/cmd_creator.sh
         exit
         ;;
-    15)
+    14)
         # Quitter
         echo "Au revoir !"
         exit

@@ -13,7 +13,4 @@
   # Se déplacer dans le projet
   cd $PROJECT_PATH
 
-  # Téléchargement
-  git clone https://github.com/discordjs/discord.js.git .
-
-
+# Your code here

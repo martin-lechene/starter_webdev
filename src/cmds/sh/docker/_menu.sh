@@ -1,9 +1,14 @@
  # Docker
         echo "Choisissez une commande :"
+        echo "0. Retour"
         echo "1. Installer Docker Hello World"
         read -p "Choisissez une commande (1-2) : " docker_command_choice
 
         case $docker_command_choice in
+            0)
+                        # Retour
+                        bash src/cmds/sh/app.sh
+                        ;;
             1)
                 # Installer Docker
                 bash src/cmds/docker/install-docker.sh

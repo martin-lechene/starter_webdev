@@ -1,9 +1,14 @@
   # Laravel
         echo "Choisissez une commande :"
+        echo "0. Retour"
         echo "1. Installer Laravel Basic"
         read -p "Choisissez une commande (1-3) : " laravel_command_choice
 
         case $laravel_command_choice in
+             0)
+                # Retour
+                bash src/cmds/sh/app.sh
+                ;;
             1)
                 # Installer Laravel
                 echo "Installation de Laravel Basic..."

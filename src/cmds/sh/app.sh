@@ -3,9 +3,9 @@
 # Afficher le message de sélection de la technologie
 echo "Sélectionnez une technologie :"
 echo "1. WordPress"
-echo "2. PHP Native / WebApp"
-echo "3. Laravel"
-echo "4. Discord Bot"
+echo "2. PHP"
+echo "3. Laravel" # TODO: Change folder of actions in folders /actions
+echo "4. DiscordJS"
 echo "5. Symfony"
 echo "6. Docker"
 echo "7. HTML"
@@ -60,7 +60,7 @@ case $tech_choice in
         bash src/cmds/sh/cmd_creator.sh
         exit
         ;;
-    14)
+    13)
         # Quitter
         echo "Au revoir !"
         exit

@@ -1,5 +1,6 @@
 # Python
         echo "Choisissez une commande :"
+        echo "0. Retour"
         echo "1. Installer projet Basic"
         echo "2. Installer projet Django"
         echo "3. Installer projet Flask"
@@ -9,6 +10,10 @@
         read -p "Choisissez une commande (1-6) : " python_command_choice
 
         case $python_command_choice in
+            0)
+                # Retour
+                bash src/cmds/sh/app.sh
+                ;;
             1)
                 # Installer Python
                 bash src/cmds/python/install_basic.sh

@@ -1,11 +1,16 @@
 # WordPress
         echo "Choisissez le type d'installation WordPress :"
+        echo "0. Retour"
         echo "1. WP Complet"
         echo "2. WP Core"
         echo "3. WP + React Startkit (postlight)"
         read -p "Choisissez une commande (1-x) : " wp_command_choice
 
         case $wp_command_choice in
+            0)
+                  # Retour
+                  bash src/cmds/sh/app.sh
+                  ;;
             1)
                 # Installation de WordPress Complet
                 echo "Installation de WordPress Complet selectionné."

@@ -31,3 +31,4 @@
   echo "DB_NAME=$project_name" >> .env
   echo "DB_PORT=3306" >> .env
 
+

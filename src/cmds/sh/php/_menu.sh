@@ -6,7 +6,7 @@
         echo "3. Installer SearchPHP"
         echo "4. Installer Mastodon"
         echo "5. Installer Brionmario/php-starter"
-        read -p "Choisissez une commande (1-5) : " php_command_choice
+        read -p "Choisissez une commande : " php_command_choice
 
         case $php_command_choice in
             0)

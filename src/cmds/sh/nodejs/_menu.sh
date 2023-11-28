@@ -2,7 +2,7 @@
         echo "Choisissez une commande :"
         echo "0. Retour"
         echo "1. Installer NodeJS"
-        echo "2. Installer dogs-api"
+        echo "2. Installer dogs-api (martin-lechene)"
         read -p "Choisissez une commande : " nodejs_command_choice
 
         case $nodejs_command_choice in
@@ -16,7 +16,7 @@
                 ;;
             2)
                 # dogs-api
-                bash src/cmds/sh/nodejs/dogs_api.sh
+                bash src/cmds/sh/nodejs/install_dogs_api.sh
                 ;;
             *)
                 echo "Option invalide."

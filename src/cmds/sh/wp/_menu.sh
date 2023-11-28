@@ -4,7 +4,7 @@
         echo "1. WP Complet"
         echo "2. WP Core"
         echo "3. WP + React Startkit (postlight)"
-        read -p "Choisissez une commande (1-x) : " wp_command_choice
+        read -p "Choisissez une commande : " wp_command_choice
 
         case $wp_command_choice in
             0)

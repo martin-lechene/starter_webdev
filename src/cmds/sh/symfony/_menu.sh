@@ -4,7 +4,7 @@
         echo "1. Installer Symfony"
         echo "2. Installer Symfony SaaS"
         echo "3. Installer Symfony Flex"
-        read -p "Choisissez une commande (1-X) : " symfony_command_choice
+        read -p "Choisissez une commande : " symfony_command_choice
 
         case $symfony_command_choice in
             0)
